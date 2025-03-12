@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Color Picker</h1>
+      <!-- here is the input of color picker -->
+      <input type="text" id="colorSearch" placeholder="Search color" />
+      <input class="color-box" type="color" id="colorInput" />
+      <p  id="colorCode">#000000</p>
+      <button id="copyButton">Copy color code</button>
+
+      <!-- here is the Complementary Colors -->
+      <div class="Complementary-color">
+        <h2>Complementary Color</h2>
+        <div id="complementaryContainer"></div>
+      </div>
+
+      <!-- Color List -->
+      <button id="saveColorButton">Save Color</button>
+      <div class="favorites">
+        <h2>Favorite Colors</h2>
+        <div id="favoritesContainer"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,5 +1,139 @@
-*{
-  padding: 0px;
-  margin: 0px;
+
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #232323;
+}
+
+.container {
+  background: #c973e9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  position: relative;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+#colorSearch {
+  margin-top: 10px;
+  display: block;
+  margin: 25px 0 10px 30px;
+  width: 80%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+
+
+}
+
+#colorInput {
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+}
+
+#colorInput::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+}
+
+#colorInput::-moz-color-swatch {
+  border-radius: 50%;
+  border: none;
+}
+
+.colorCode {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.Complementary-color {
+  margin-top: 20px;
+}
+
+.Complementary-color h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#complementaryContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.favorites {
+  margin-top: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+}
+
+.favorites h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#favoritesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.color-box {
+  width: 40px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
 }
