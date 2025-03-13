@@ -127,9 +127,10 @@ button:hover {
 }
 
 .color-box {
-  width: 40px;
-  height: 30px;
-  border-radius: 8px;
+  width: 70px;
+  height: 70px;
+  
+  border-radius: 50%;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
