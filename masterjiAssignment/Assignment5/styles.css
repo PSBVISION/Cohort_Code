@@ -5,7 +5,6 @@
 }
 body{
   background: #232323;
-  color: #f1f1f1;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
 }
@@ -42,9 +41,7 @@ header {
   background-color: #f0f0f0;
   border-bottom: 1px solid #ddd;
 }
-.section-header h2 {
-  color: #232323;
-}
+
 #markdownInput {
   flex: 1;
   padding: 1rem;
@@ -74,17 +71,96 @@ header {
   background-color: #c0392b;
 }
 
+/* Markdown styling */
+#preview h1, #preview h2, #preview h3, #preview h4, #preview h5, #preview h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
 
+#preview h1 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.3rem;
+}
+
+#preview h2 {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3rem;
+}
+
+#preview p {
+  margin-bottom: 1rem;
+}
+
+#preview ul, #preview ol {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+#preview blockquote {
+  border-left: 4px solid #ddd;
+  padding-left: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+#preview pre {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+#preview code {
+  background-color: #f0f0f0;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Consolas', 'Monaco', monospace;
+}
+
+#preview pre code {
+  padding: 0;
+  background-color: transparent;
+}
+
+#preview a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+#preview a:hover {
+  text-decoration: underline;
+}
+
+#preview img {
+  max-width: 100%;
+  height: auto;
+}
+
+#preview table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#preview th, #preview td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+#preview th {
+  background-color: #f0f0f0;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   .container {
       flex-direction: column;
-      height: auto;
   }
   
-  .editor-section, .preview-section {
+  .editor-section {
       height: 50vh;
   }
+
   
 }
